@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2DF0E725C8B452009D41B1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF0E625C8B452009D41B1 /* Entry.swift */; };
+		6C2DF0EB25C8BAA7009D41B1 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF0EA25C8BAA7009D41B1 /* EntryController.swift */; };
+		6C2DF0F025C8BBB5009D41B1 /* CloudKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF0EF25C8BBB5009D41B1 /* CloudKitError.swift */; };
+		6C2DF0F425C8D007009D41B1 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF0F325C8D007009D41B1 /* EntryDetailViewController.swift */; };
+		6C2DF0F825C8D017009D41B1 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF0F725C8D017009D41B1 /* EntryListTableViewController.swift */; };
 		85858B84242D081200C5ECA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85858B83242D081200C5ECA2 /* AppDelegate.swift */; };
 		85858B86242D081200C5ECA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85858B85242D081200C5ECA2 /* SceneDelegate.swift */; };
 		85858B8B242D081200C5ECA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85858B89242D081200C5ECA2 /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C2DF0E625C8B452009D41B1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		6C2DF0EA25C8BAA7009D41B1 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		6C2DF0EF25C8BBB5009D41B1 /* CloudKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitError.swift; sourceTree = "<group>"; };
+		6C2DF0F325C8D007009D41B1 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		6C2DF0F725C8D017009D41B1 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		85858B80242D081200C5ECA2 /* CloudKitJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85858B83242D081200C5ECA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85858B85242D081200C5ECA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +49,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C2DF0E425C8B2FD009D41B1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				85858B89242D081200C5ECA2 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6C2DF0E525C8B448009D41B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C2DF0E625C8B452009D41B1 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C2DF0E925C8BA72009D41B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C2DF0EA25C8BAA7009D41B1 /* EntryController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C2DF0EE25C8BB9A009D41B1 /* Helpers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C2DF0EF25C8BBB5009D41B1 /* CloudKitError.swift */,
+			);
+			path = "Helpers & Extensions";
+			sourceTree = "<group>";
+		};
+		6C2DF0F225C8CFF4009D41B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C2DF0F325C8D007009D41B1 /* EntryDetailViewController.swift */,
+				6C2DF0F725C8D017009D41B1 /* EntryListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		85858B77242D081200C5ECA2 = {
 			isa = PBXGroup;
 			children = (
 				85858B82242D081200C5ECA2 /* CloudKitJournal */,
+				6C2DF0EE25C8BB9A009D41B1 /* Helpers & Extensions */,
 				85858B81242D081200C5ECA2 /* Products */,
 				85858B9E242D0A9200C5ECA2 /* Frameworks */,
 			);
@@ -59,8 +111,11 @@
 		85858B82242D081200C5ECA2 /* CloudKitJournal */ = {
 			isa = PBXGroup;
 			children = (
+				6C2DF0F225C8CFF4009D41B1 /* View Controllers */,
+				6C2DF0E925C8BA72009D41B1 /* Controllers */,
+				6C2DF0E525C8B448009D41B1 /* Models */,
 				85858B9D242D0A8B00C5ECA2 /* CloudKitJournal.entitlements */,
-				85858B89242D081200C5ECA2 /* Main.storyboard */,
+				6C2DF0E425C8B2FD009D41B1 /* Storyboard */,
 				85858B97242D082D00C5ECA2 /* Resources */,
 			);
 			path = CloudKitJournal;
@@ -113,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Zebadiah Watson";
 				TargetAttributes = {
 					85858B7F242D081200C5ECA2 = {
@@ -157,8 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2DF0E725C8B452009D41B1 /* Entry.swift in Sources */,
 				85858B84242D081200C5ECA2 /* AppDelegate.swift in Sources */,
+				6C2DF0EB25C8BAA7009D41B1 /* EntryController.swift in Sources */,
+				6C2DF0F825C8D017009D41B1 /* EntryListTableViewController.swift in Sources */,
 				85858B86242D081200C5ECA2 /* SceneDelegate.swift in Sources */,
+				6C2DF0F425C8D007009D41B1 /* EntryDetailViewController.swift in Sources */,
+				6C2DF0F025C8BBB5009D41B1 /* CloudKitError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +270,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,6 +331,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -304,13 +366,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudKitJournal/CloudKitJournal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = W578QLR797;
 				INFOPLIST_FILE = "$(SRCROOT)/CloudKitJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CloudKitJournal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OmriHorowitz.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,13 +385,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudKitJournal/CloudKitJournal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = W578QLR797;
 				INFOPLIST_FILE = "$(SRCROOT)/CloudKitJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CloudKitJournal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OmriHorowitz.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
